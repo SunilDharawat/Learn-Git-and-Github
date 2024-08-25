@@ -1,0 +1,45 @@
+01. For Github we first generate SSH key for our system then paste into our github account
+    SSH key -> to communicate with our system and github account repo
+02. Create a repo on github account
+03. perform neccessary operation only
+    { echo "# git-github-test" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/SunilDharawat/git-github-test.git
+    git push -u origin main (-u means set a upstream for main branch when next time we push the code to origin it reflect on our origin branch)
+    }
+    Origin means remote repositry name 
+04. to check remote connection we used => git remote -v (this give us to details of connection)
+    After add origin cmg we get connetion between our repo and system
+    And using this cmd we can fetch or push repositry
+
+
+
+<!--To add value or open source purpose used this  -->
+01. First go to github where u want to add your value/contribute into opensource 
+    then click button (fork) here you will get the new repo option and all code fork by previous repo
+
+02. Now you have to clone the code using origin of fork 
+    git clone (origin url)
+
+03. Now you get the code base you can add your contribute 
+04. then add files through (add cmd)
+05. then add commit msg
+06. then push 
+
+<!-- now we are push our code to opensource contribute -->
+07. Click Contribute button then 
+    click on open pull request 
+    now design pull request following 
+    points 1. Communication
+           2. Value add
+           3. Message with full details
+           (1. Proper details)
+           (2. Sub details)
+           (3. text or msg)
+and lastly 
+click on create pull request
+all done in your side
+    

@@ -1,0 +1,66 @@
+Git => It is a Software where we can control flow of our code by writing check points.
+       we can also say that it is a version control system.
+
+Note - Repositry/Directry means => Folder
+
+Commands -
+01. Check the version of Git => git --version
+02. Check the status (track/not track) of folder/repo/dir => git status
+03. Set globaly user email => git config --global user.email "user@email"
+04. Set globaly user name => git config --global user.name "user name"
+05. To check what are things available in git we use a command => git config --list
+
+Now we starting our journey to next 
+level-01 => To create new dir/repo/folder in our system 
+            so before creating any folder first check the status of our system through 
+            this command (git status) then use next commands
+06. To Initialize our folder to git for tracking we use => git init  
+
+Now we understand flow of GIT
+1. git init - by using this command our repositry goes into initailized in  (working directory)
+2. git add - by using this command our repositry add into (staging area)
+3. git commit - by using this command our repositry commit a msg and make a (repo)
+4. git push - this is final command to push our repo into (github)
+
+07. To add single file in staging area we use => git add (file name with exe.)
+08. To add all files in one go we use => git add . (give one space then dot)
+09. To unstage any files we used => git rm --cached (file name with exe.)
+10. To commit or give msg on that file we used => git commit -m "" (in double quots pass msg)
+11. To check whos commit repo and when we used (it will give a log msg) => git log 
+12. To check above(11) command msg in one-line we use flag(-) like that =>git log --oneline
+
+Now, take one scenario where you skip to write msg during commiting msg.
+so here we have to configure our code editor into our git through this command line
+13. To re-write (msg) through code editor we used this cmd => git config --global code.editor "code--wait" 
+by using this cmd it return a msg on code window to add msg then save it then close.
+now your waiting msg in cmd remove or msd will be set
+
+Now, we learn Branch
+14. To check the branch name we used => git branch
+15. To create a new branch we used => git branch bug-fix (bug-fix branch name)
+16. To switch in new branch we used => git switch bug-fix (file name that u want to switch) 
+17. To create and switch in new branch we used => git switch -c new-branch (branch name)
+18. To checkout branch in files we used => git checkout dark-mode (branch name if it is present  then it switch on otherwise it give msg)
+19. To merge one branch to main/master branch we used => git merge branch-name (when u want to merge code-fix branch into master branch then you write this command in ur master branch )
+20. To abort merge we used => git merge --abort (when we dont want to resolve conflict)
+21. To change old branch name we used => git branch -m (old branch name) (new branch name)
+22. To delete branch we used => git branch -d (branch name)
+23. To check the diffrence between two files or commits we used => git diff (parameter)
+    git diff --staged
+    git diff (first file name) space (second file name)
+    git diff (file file name)..(second file name)
+    
+24. To tempary (location) store data we used => git stash 
+    git stash (u can give relevant msg).
+    git stash list (for list-down all stash)
+    git stash apply (to continue we have to used this to come in starting point)
+    git stash pop (to remove or apply both in one cmd)
+    git stash drop (to remove in stash area)
+    git stash clear (to clear stash )
+25. To add a tag with any released version we used => git tag
+    git tag (tag name)
+    git tag -a (tag name) -m (with msg)
+26. To rebase means change the base of branch we used => git rebase (branch name)[not used in master/main barnch]
+27. To show histry of your commits we used => gti reflog 
+    git reflog (commit hash)- check specific commit
+    git reset --hard (commit hash)- recover lost commit or changes
